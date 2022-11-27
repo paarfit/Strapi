@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workouts",
+  "info": {
+    "singularName": "workout",
+    "pluralName": "workouts",
+    "displayName": "Workout",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "workoutname": {
+      "type": "string"
+    },
+    "workoutcategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::workoutcategory.workoutcategory"
+    },
+    "workoutbodypart": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::workoutbodypart.workoutbodypart"
+    },
+    "workoutlevel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::workoutlevel.workoutlevel"
+    },
+    "sets_low": {
+      "type": "integer"
+    },
+    "time_low": {
+      "type": "integer"
+    },
+    "pause_low": {
+      "type": "integer"
+    },
+    "sets_intermediate": {
+      "type": "integer"
+    },
+    "time_intermediate": {
+      "type": "integer"
+    },
+    "pause_intermediate": {
+      "type": "integer"
+    },
+    "sets_high": {
+      "type": "integer"
+    },
+    "time_high": {
+      "type": "integer"
+    },
+    "pause_high": {
+      "type": "integer"
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "workouttype": {
+      "type": "enumeration",
+      "enum": [
+        "abwechselnd",
+        "simultan"
+      ]
+    },
+    "poster": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

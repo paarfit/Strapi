@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workoutlevels",
+  "info": {
+    "singularName": "workoutlevel",
+    "pluralName": "workoutlevels",
+    "displayName": "Workoutlevel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "levelname": {
+      "type": "string"
+    }
+  }
+}

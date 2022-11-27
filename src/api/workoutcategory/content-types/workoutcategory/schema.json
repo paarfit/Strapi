@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workoutcategories",
+  "info": {
+    "singularName": "workoutcategory",
+    "pluralName": "workoutcategories",
+    "displayName": "Workoutcategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryname": {
+      "type": "string"
+    }
+  }
+}
